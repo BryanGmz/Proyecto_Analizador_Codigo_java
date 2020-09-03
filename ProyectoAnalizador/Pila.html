@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PILA</title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<body>
+<body style="background-color:#000099;"></body><center>
+<h1 class="display-3">Pila</h1>
+</center>
+<center>
+ <table class="table table-striped table-dark">
+   <thead>
+    <tr>
+<th scope="col">Estados</th>
+<th scope="col">Simbolos</th>
+<th scope="col">Acciones</th></tr>
+  </thead>
+  <tbody>
+<tr>
+
+<td>1 </td>
+<td></td>
+<td>Shift ( 1, numero)</td></tr>
+<tr>
+
+<td>1 4 </td>
+<td>numero </td>
+<td>Review ( 4, más) #1 - E -> numero </td></tr>
+<tr>
+
+<td>1 </td>
+<td>E </td>
+<td>Goto ( 1, E)</td></tr>
+<tr>
+
+<td>1 3 </td>
+<td>E </td>
+<td>Shift ( 3, más)</td></tr>
+<tr>
+
+<td>1 3 7 </td>
+<td>E más </td>
+<td>Shift ( 7, numero)</td></tr>
+<tr>
+
+<td>1 3 7 4 </td>
+<td>E más numero </td>
+<td>Review ( 4, por) #1 - E -> numero </td></tr>
+<tr>
+
+<td>1 3 7 </td>
+<td>E más E </td>
+<td>Goto ( 7, E)</td></tr>
+<tr>
+
+<td>1 3 7 11 </td>
+<td>E más E </td>
+<td>Shift ( 11, por)</td></tr>
+<tr>
+
+<td>1 3 7 11 6 </td>
+<td>E más E por </td>
+<td>Shift ( 6, numero)</td></tr>
+<tr>
+
+<td>1 3 7 11 6 4 </td>
+<td>E más E por numero </td>
+<td>Review ( 4, $) #1 - E -> numero </td></tr>
+<tr>
+
+<td>1 3 7 11 6 </td>
+<td>E más E por E </td>
+<td>Goto ( 6, E)</td></tr>
+<tr>
+
+<td>1 3 7 11 6 10 </td>
+<td>E más E por E </td>
+<td>Review ( 10, $) #3 - E -> E por E </td></tr>
+<tr>
+
+<td>1 3 7 </td>
+<td>E más E </td>
+<td>Goto ( 7, E)</td></tr>
+<tr>
+
+<td>1 3 7 11 </td>
+<td>E más E </td>
+<td>Review ( 11, $) #4 - E -> E más E </td></tr>
+<tr>
+
+<td>1 </td>
+<td>E </td>
+<td>Goto ( 1, E)</td></tr>
+<tr>
+
+<td>1 3 </td>
+<td>E </td>
+<td>Review ( 3, $) #6 - S -> E </td></tr>
+<tr>
+
+<td>1 </td>
+<td>S </td>
+<td>Goto ( 1, S)</td></tr>
+<tr>
+
+<td>1 2 </td>
+<td>S </td>
+<td>Aceptado</td></tr>
+
+ </tbody>
+</table>
+</center>
+</body>
+</head>
+</html>
